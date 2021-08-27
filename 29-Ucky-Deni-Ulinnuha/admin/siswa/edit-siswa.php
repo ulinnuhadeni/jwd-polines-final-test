@@ -1,5 +1,5 @@
 <?php
-include_once("../backend/database/Connection.php");
+require("../../backend/database/Connection.php");
 
 $id = $_GET['id'];
 $result = mysqli_query($connection, "SELECT * FROM data_siswa WHERE id = $id ");
@@ -23,13 +23,13 @@ while ($user_data = mysqli_fetch_array($result)) {
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Favicon Website Links -->
-	<link rel="shortcut icon" href="../assets/images/person-icon.svg" type="image/x-icon" />
+	<link rel="shortcut icon" href="../../assets/images/person-icon.svg" type="image/x-icon" />
 
 	<!-- Bootstrap core CSS -->
-	<link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+	<link href="../../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
 	<!-- Website CSS Links-->
-	<link href="../assets/css-pages/input-edit-data.css" rel="stylesheet" />
+	<link href="../../assets/css-pages/input-edit-data.css" rel="stylesheet" />
 
 	<title>Edit Data <?= $nama ?></title>
 </head>
@@ -38,7 +38,7 @@ while ($user_data = mysqli_fetch_array($result)) {
 	<div class="container">
 		<main>
 			<div class="py-5 text-center">
-				<img class="d-block mx-auto mb-4" src="../assets/images/person-icon.svg" alt="" width="72" height="57" />
+				<img class="d-block mx-auto mb-4" src="../../assets/images/person-icon.svg" alt="" width="72" height="57" />
 				<div class="btn-toolbar mb-2 mb-md-0 d-flex justify-content-center">
 					<div class="btn-group me-2">
 						<a href="input-siswa.php" class="btn btn-sm btn-outline-success" target="_blank">
@@ -58,7 +58,7 @@ while ($user_data = mysqli_fetch_array($result)) {
 
 			<div class="row">
 				<div class="col-md-12 col-lg-12">
-					<form action="../backend/crud/edit.php" method="POST" class="needs-validation" novalidate>
+					<form action="../../backend/crud/edit.php" method="POST" class="needs-validation" novalidate>
 						<div class="row g-3">
 							<input type="hidden" class="form-control" id="id" name="id" value="<?= $id ?>" required />
 							<div class="col-sm-6">
