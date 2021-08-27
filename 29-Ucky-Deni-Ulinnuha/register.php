@@ -37,6 +37,19 @@
 				<label for="email">Email address</label>
 				<div class="invalid-feedback">Email Address is Required.</div>
 			</div>
+			<div class="form-check mt-4 mb-4 text-start">
+				<h6 class="text-start">Apakah anda ingin menjadi admin ?</h6>
+				<div class="row">
+					<div class="col-sm-6">
+						<input class="form-check-input mx-auto" type="radio" name="isAdmin" id="exampleRadios1" value="1">
+						<label class="form-check-label mx-2" for="exampleRadios1"> Yes </label>
+					</div>
+					<div class="col-sm-6">
+						<input class="form-check-input mx-auto" type="radio" name="isAdmin" id="exampleRadios1" value="0" checked>
+						<label class="form-check-label mx-2" for="exampleRadios1"> No </label>
+					</div>
+				</div>
+			</div>
 			<div class="form-floating">
 				<input type="password" name="password" class="form-control" id="password" placeholder="Password" />
 				<label for="password">Password</label>

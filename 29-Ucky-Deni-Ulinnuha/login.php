@@ -27,7 +27,7 @@
 			<h1 class="h3 mb-3 fw-normal">Log In</h1>
 
 			<div class="form-floating mb-2">
-				<input type="email|text" name="username|email" class="form-control" id="userName" placeholder="youremail@mail.com | your username" required />
+				<input type="text" name="username" class="form-control" id="userName" placeholder="youremail@mail.com | your username" required />
 				<label for="userName">Email address or Username</label>
 				<div class="invalid-feedback">
 					Email address or Username are Required.
