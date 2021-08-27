@@ -39,11 +39,12 @@ if (isset($_SESSION['username']) == '' || $_SESSION['isAdmin'] == false) {
 
             <div class="p-5 mb-4 bg-light rounded-3">
                 <div class="container-fluid py-5">
-                    <h1 class="display-5 fw-bold">Halo User </h1>
+                    <h1 class="display-5 fw-bold">Halo . . </h1>
                     <p class="col-md-8 fs-4">
                         Anda Sedang Memasuki area User saja,
                         apabila anda ingin mengakses halaman admin
-                        silahkan pilih 'Yes' saat Registrasi User . . . .
+                        silahkan pilih <em> <strong> 'Yes' </strong> </em> pada pilihan <em>'Apakah anda ingin menjadi admin ?'</em>
+                        saat Registrasi User . . . .
                     </p>
                     <a class="btn btn-outline-primary btn-lg" href="register.php" target="_blank">Kembali Ke Halaman Register</a>
                     <a class="btn btn-outline-danger btn-lg" href="backend/auth/logout.php">Logout</a>

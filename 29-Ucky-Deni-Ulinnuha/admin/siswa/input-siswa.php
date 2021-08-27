@@ -27,10 +27,10 @@
 						<a href="input-siswa.php" class="btn btn-sm btn-outline-success" target="_blank">
 							Input Data
 						</a>
-						<a href="index.php" class="btn btn-sm btn-outline-primary" target="_blank">
+						<a href="../index.php" class="btn btn-sm btn-outline-primary" target="_blank">
 							Homepage
 						</a>
-						<a href="" class="btn btn-sm btn-outline-danger"> Logout </a>
+						<a href="../../backend/auth/logout.php" class="btn btn-sm btn-outline-danger"> Logout </a>
 					</div>
 				</div>
 

@@ -24,6 +24,7 @@ if (isset($_SESSION['username']) == '' || $_SESSION['isAdmin'] == true) {
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
 		<!-- CSS Links -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 		<link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../assets/css-pages/dashboard.css" />
 		<title>Dashboard Administrator</title>
@@ -122,9 +123,9 @@ if (isset($_SESSION['username']) == '' || $_SESSION['isAdmin'] == true) {
 
 								echo "<td>" . $nilai_huruf . "</td>";
 								echo "<td>" . $predikat . "</td>";
-								echo "<td>
-											<a href='siswa/edit-siswa.php?id=$user_data[id]' class='btn btn-sm btn-outline-success' target='_blank'> Edit</a> |
-											<a href='../backend/crud/delete.php?id=$user_data[id]' class='btn btn-sm btn-outline-danger' >Delete</a>
+								echo "<td width='100'>
+											<a href='siswa/edit-siswa.php?id=$user_data[id]' class='btn btn-sm btn-outline-success' target='_blank'> <i class='bi-pencil'></i></a>
+											<a href='../backend/crud/delete.php?id=$user_data[id]' class='btn btn-sm btn-outline-danger' ><i class='bi-trash'></i></a>
 								 </td>";
 								echo "</tr>";
 							}
