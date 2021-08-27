@@ -14,5 +14,5 @@ if (isset($_POST['Update'])) {
 
     $result = mysqli_query($connection, "UPDATE data_siswa SET nim = '$nim', nama_lengkap='$name', alamat='$address', nilai_harian='$nilai_harian', nilai_mid_semester='$nilai_mid_semester', nilai_final_test='$nilai_final_test' WHERE id = $id");
 
-    echo "<br /> Data Siswa Berhasil diperbaharui. <a href='../../admin/index.php'>Back To Home</a>";
+    header("Location: ../../admin/index.php");
 }
