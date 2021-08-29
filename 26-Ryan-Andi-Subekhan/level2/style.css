@@ -1,0 +1,150 @@
+/*Navbar*/
+
+.jumbotron .container { /*Biar display nya berada posisi paling atas lapisan*/
+	position: relative;
+	z-index: 1;
+}
+
+/* Jumbotron  */
+.jumbotron {
+	background-image: url(img/00.jpg);
+	background-size: cover;
+	background-position: 0 -60px;
+	height: 540px;
+	text-align: center;	
+	position: relative;	/* Memberikan pengaruh terhadap posisi baris ke 17-25 */
+}
+
+.jumbotron::after { /*Memberikan degradasi warna terhadap gambar image*/
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)); /* Mengatur warna gradasi */
+	position: absolute;
+	bottom: 0;
+}
+
+
+.jumbotron .display-4 {
+	color: white;
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+	font-weight: 500;
+}
+
+
+/* Info Panel */
+.info-panel {
+	box-shadow: 0 3px 20px rgba(0, 0, 0, .5);
+	border-radius: 12px;
+	margin-top: -100px;
+	background-color: white;
+	padding: 30px;	
+}
+
+
+
+.info-panel img { /* Mengatur Ukuran Gambar */
+	height: 90px;
+	margin-right: -25px;
+	margin-bottom: px;
+}
+
+.info-panel h4 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 23px;
+}
+
+.info-panel p {
+	font-size: 15px;
+	color: #acacac;
+	margin-top: -5px;
+	margin-right: -8px;
+	font-weight: 200;
+}
+
+
+/* testimonial */
+
+/* Utility */
+.tombol {
+	text-transform: uppercase;
+	border-radius: 40px;
+}
+
+
+/* footer */
+.footer {
+	margin-top: 50px;
+}
+
+.footer p {
+	color: #acacac;
+	font-size: 18px;
+}
+
+
+
+
+/* Desktop Version */
+@media (min-width: 992px) { 
+ 	.navbar-brand, .nav-link {
+ 		color: white !important;
+ 		text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+ 	}
+ 	.nav-link {
+	text-transform: uppercase;
+	margin-right: 30px;
+	}
+
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #0B63DC;
+		width:50% ;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+
+	.jumbotron {
+		margin-top: -75px;
+		height: 770px;
+	}
+
+	.jumbotron .display-4 {
+	font-size: 62px;
+	}
+
+	.workingspace {
+		text-align: left;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
